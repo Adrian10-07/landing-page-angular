@@ -12,7 +12,8 @@ import { HomeComponent } from './home/home.component';
 
   ],
   exports:[
-
+    CommonModule,
+    HomeComponent,
   ],
 })
 export class CiudadesModule { }

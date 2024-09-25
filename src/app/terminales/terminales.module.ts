@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TerminalesComponent } from './terminales/terminales.component';
 
 
 
@@ -7,7 +8,10 @@ import { CommonModule } from '@angular/common';
   declarations: [],
   imports: [
     CommonModule,
-    TerminalesModule,
+    TerminalesComponent,
+  ],
+  exports:[
+    TerminalesComponent,
   ]
 })
 export class TerminalesModule { }
