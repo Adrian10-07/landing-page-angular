@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CardsComponent } from '../cards/cards.component';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -12,4 +14,9 @@ import { CardsComponent } from '../cards/cards.component';
 })
 export class HomeComponent {
 
+  constructor(private router: Router) {}
+
+  onCardClick(ciudad: string) {
+    this.router.navigate(['/terminales', ciudad]);
+  }
 }

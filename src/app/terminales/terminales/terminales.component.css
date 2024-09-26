@@ -53,8 +53,44 @@ label {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+h1{
+  color: green;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
 
+
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  color: black;
+}
+
+.card-left,
+.card-right {
+  flex: 1; 
+  max-width: 20%; 
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-left {
+  text-align:center ;
+}
+
+.card-right {
+  text-align: center;
+}
 select {
+  background-color: green;
+  color: white;
   padding: 10px;
   width: 200px;
   border-radius: 5px;
@@ -113,4 +149,15 @@ app-cards {
 body {
   background-color: white; /* O el color que desees */
 }
-
+.fb2{
+  width: 60px; /* Tamaño reducido de las imágenes */
+  height: 30px; /* Altura proporcional al ancho */
+  margin-left: 800px; /* Espacio entre cada imagen */
+}
+.ws2{
+  width: 150px;
+  height: 80px;
+}
+.insta2{
+  width: 60px;
+}

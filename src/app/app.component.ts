@@ -4,6 +4,8 @@ import { CiudadesModule } from './ciudades/ciudades.module';
 import { HomeComponent } from "./ciudades/home/home.component";
 import { TerminalesComponent } from './terminales/terminales/terminales.component';
 import { TerminalesModule } from './terminales/terminales.module';
+import { TransporteComponent } from './transporte/transporte/transporte.component';
+import { TransporteModule } from './transporte/transporte.module';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,9 @@ import { TerminalesModule } from './terminales/terminales.module';
     CiudadesModule,
     HomeComponent,
     TerminalesComponent,
-    TerminalesModule
+    TerminalesModule,
+    TransporteComponent,
+    TransporteModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,64 +1,91 @@
-  <header class="header">
-    <h1 class="title">ChiapaTour</h1>
-  </header>
-  
-  <div>
-    <section>
-        <label for="destinations">Escoja la ciudad a la que desea viajar</label>
-        <select id="destinations" name="A donde vamos hoy?">
-          <option value="ciudad1">San Cristobal</option>
-          <option value="ciudad2">Comitan de Dominguez</option>
-          <option value="ciudad3">Tonala</option>
-          <option value="ciudad4">Palenque</option>
-          <option value="ciudad5">Chiapa De Corzo</option>
-          <option value="ciudad6">Chalakmul</option>
-        </select>
-      </section>
+<div class="header">
+  <div class="header-content">
+    <div class="title">ChiapaTour</div>
   </div>
-  
-  <div class="cards-container">
-    <app-cards
-      imageUrl="sancris.jpg"
-      altText="Imagen de ejemplo"
-      link="https://example.com"
-      linkText="San Cristobal">
-    </app-cards>
-    <app-cards
-     imageUrl="comitan.jpeg"
-      altText="Imagen de ejemplo"
-      link="https://example.com"
-      linkText="Comitan">
-    </app-cards>
-    <app-cards
-      imageUrl="palenque.jpg"
-      altText="Imagen de ejemplo"
-      link="https://example.com"
-      linkText="Palenque">
-    </app-cards>
-    <app-cards
-      imageUrl="corzo.jpeg"
-      altText="Imagen de ejemplo"
-      link="https://example.com"
-      linkText="Chiapa de Corzo">
-    </app-cards>
-    <app-cards
-      imageUrl="tonala.jpeg"
-      altText="Imagen de ejemplo"
-      link="https://example.com"
-      linkText="Tonala">
-    </app-cards>
-    <app-cards
-      imageUrl="calakmul.webp"
-      altText="Imagen de ejemplo"
-      link="https://example.com"
-      linkText="Chalakmul">
-    </app-cards>
-  </div>
-  <div>
-    <footer class="footer">
-        <p>&copy; 2024 ChiapaTour. Todos los derechos reservados.</p>
-      </footer>
-  </div>
-    
+</div>
 
+<div>
+
+  <h1>ingrese el lugar al que desea viajar </h1>
+
+  <div class="select-container">
+    <div class="card-left">
+      <div class="card-content">
+        <div class="content">
+          Busca el lugar al que deseas viajar o mira las recomendaciones en la parte de abajo. Haz clic sobre la imagen para más detalles del transporte.
+        </div>
+      </div>
+    </div>
+    
+    <section>
+      <select id="destinations" name="A donde vamos hoy?">
+        <option value="ciudad1">San Cristobal</option>
+        <option value="ciudad2">Comitan de Dominguez</option>
+        <option value="ciudad3">Tonala</option>
+        <option value="ciudad4">Palenque</option>
+        <option value="ciudad5">Chiapa De Corzo</option>
+        <option value="ciudad6">Chalakmul</option>
+      </select>
+    </section>
   
+    <div class="card-right">
+      <div class="card-content">
+        <div class="content">
+          "No esperes a tenerlo todo resuelto para viajar, ¡empieza y las cosas se irán acomodando!"        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="cards-container">
+  <app-cards
+    (click)="onCardClick('san-cristobal')"
+    imageUrl="sancris.jpg"
+    altText="Imagen de ejemplo"
+    linkText="San Cristobal">
+  </app-cards>
+  
+  <app-cards
+    (click)="onCardClick('comitan')"
+    imageUrl="comitan.jpeg"
+    altText="Imagen de ejemplo"
+    linkText="Comitan">
+  </app-cards>
+  
+  <app-cards
+    (click)="onCardClick('palenque')"
+    imageUrl="palenque.jpg"
+    altText="Imagen de ejemplo"
+    linkText="Palenque">
+  </app-cards>
+  
+  <app-cards
+    (click)="onCardClick('chiapa-de-corzo')"
+    imageUrl="corzo.jpeg"
+    altText="Imagen de ejemplo"
+    linkText="Chiapa de Corzo">
+  </app-cards>
+  
+  <app-cards
+    (click)="onCardClick('tonala')"
+    imageUrl="tonala.jpeg"
+    altText="Imagen de ejemplo"
+    linkText="Tonala">
+  </app-cards>
+  
+  <app-cards
+    (click)="onCardClick('chalakmul')"
+    imageUrl="calakmul.webp"
+    altText="Imagen de ejemplo"
+    linkText="Chalakmul">
+  </app-cards>
+</div>
+
+<div>
+  <footer class="footer">
+    <p>&copy; 2024 ChiapaTour. Todos los derechos reservados.</p>
+    <img class="fb" src="Facebook.jpg" alt="">
+    <img class="ws" src="Whatsapp.png" alt="">
+    <img class="insta" src="insta.jpeg" alt="">
+  </footer>
+  
+</div>
