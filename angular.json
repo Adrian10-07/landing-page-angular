@@ -89,6 +89,12 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "repo": "https://github.com/Adrian10-07/landing-page-angular.git"
+          }
         }
       }
     }
